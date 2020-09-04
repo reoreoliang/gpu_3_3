@@ -24,7 +24,7 @@ __global__ void gpu_shared_memory(float* d_a) {
 	sh_arr[index] = average;  // 这里只是为了演示一下共享内存的生存周期，注意译者注
 }
 
-int main(int argc, char** argv)
+int main(void)
 {
 	float h_a[10], * d_a;
 	// 数值赋值
